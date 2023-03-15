@@ -58,19 +58,20 @@
           </li>
         </ul>
         <button
-          class="page-header__menu-toggle-button menu-toggle-button button js-open-menu"
+          class="page-header__toggle-button toggle-button button"
+          id="open-menu"
           type="button"
         >
           <svg
-            class="menu-toggle-button__icon"
+            class="toggle-button__icon"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="16"
             viewBox="0 0 24 16"
           >
             <path
-              fill-rule="evenodd"
               clip-rule="evenodd"
+              fill-rule="evenodd"
               d="M0 2.66667V0H24V2.66667H0ZM0 9.33333H24V6.66667H0V9.33333ZM0 16H24V13.3333H0V16Z"
             />
           </svg>
@@ -78,22 +79,24 @@
       </div>
       <div class="mobile-menu-container" id="mobile-menu-container">
         <button
-          class="mobile-menu-container__toggle-button toggle-button js-close-menu"
+          class="mobile-menu-container__toggle-button toggle-button button"
+          id="close-menu"
+          type="button"
         >
           <svg
-            viewBox="0 0 20 20"
+            class="toggle-button__icon"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
+            viewBox="0 0 20 20"
           >
             <path
+              clip-rule="evenodd"
               fill-rule="evenodd"
               d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-              clip-rule="evenodd"
             ></path>
           </svg>
         </button>
-
         <ul class="mobile-menu-container__menu menu box">
           <li class="menu__item--active box__item">
             <a class="menu__link link" href="index.html">Agencja</a>
@@ -638,5 +641,11 @@
     </footer>
 
     <script src="js/modal.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/mobile-menu.js"></script>
   </body>
 </html>

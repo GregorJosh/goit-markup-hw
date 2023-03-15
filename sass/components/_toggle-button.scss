@@ -1,4 +1,4 @@
-.menu-toggle-button {
+.toggle-button {
   background-color: $color-white1;
   display: none;
   padding: 12px 8px;
@@ -20,7 +20,7 @@
 }
 
 @media (max-width: 480px) {
-  .menu-toggle-button {
+  .toggle-button {
     display: inline;
   }
 }
