@@ -25,3 +25,13 @@
     margin-top: 10px;
   }
 }
+
+@media (max-width: 480px) {
+  .advantage {
+    text-align: center;
+
+    &__content {
+      text-align: left;
+    }
+  }
+}
