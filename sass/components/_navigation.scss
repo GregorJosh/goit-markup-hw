@@ -1,4 +1,6 @@
 .navigation {
+  display: inline-block;
+
   &,
   &__menu,
   &__item,
@@ -39,5 +41,11 @@
     &:focus {
       color: $color-blue;
     }
+  }
+}
+
+@media (max-width: 480px) {
+  .navigation {
+    display: none;
   }
 }

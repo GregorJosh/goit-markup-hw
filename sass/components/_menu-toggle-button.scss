@@ -1,0 +1,20 @@
+.menu-toggle-button {
+  background-color: $color-white1;
+  display: none;
+  padding: 12px 8px;
+  
+  &__icon {
+    fill: currentColor;
+    vertical-align: middle;
+
+    &:hover {
+      color: $color-white1;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-toggle-button {
+    display: inline;
+  }
+}

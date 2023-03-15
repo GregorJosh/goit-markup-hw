@@ -6,15 +6,28 @@
     align-items: center;
     height: 80px;
   }
-  
+
   &__icon {
     fill: currentColor;
     margin: 0 8px 3px 0;
     vertical-align: middle;
   }
-  
+
   &__links {
     margin-left: auto;
     column-gap: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-header {
+    &__container {
+      height: auto;
+      justify-content: space-between;
+    }
+
+    &__links {
+      display: none;
+    }
   }
 }
