@@ -1,0 +1,19 @@
+.section {
+  text-align: center;
+  padding: 94px 0;
+
+  &__heading {
+    color: $color-dark-gray1;
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
+
+  &__box {
+    gap: 30px;
+  }
+
+  &__card {
+    background-color: $color-white1;
+    justify-content: space-between;
+  }
+}

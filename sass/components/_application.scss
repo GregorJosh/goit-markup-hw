@@ -1,0 +1,59 @@
+.application {
+  &__heading {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  &__form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 10px;
+    text-align: left;
+    margin: 12px 40px;
+  }
+
+  &__label {
+    color: $color-gray1;
+    font-size: 12px;
+  }
+
+  &__form-field {
+    position: relative;
+  }
+
+  &__link {
+    color: $color-blue;
+    text-decoration: underline;
+    font-weight: 400;
+  }
+
+  &__label,
+  &__form-field {
+    display: block;
+    width: 100%;
+  }
+
+  &__label:has(.form-field__checkbox) {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  &__form-field:has(.form-field__checkbox) {
+    display: inline;
+    margin-right: 8px;
+  }
+
+  &__submit-button {
+    color: $color-white1;
+    background-color: $color-blue;
+    margin-top: 20px;
+    padding: 10px 76px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.88;
+    box-shadow: $btn-shadow1;
+  }
+}

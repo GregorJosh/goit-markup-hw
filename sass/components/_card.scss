@@ -1,0 +1,20 @@
+.card {
+  font-size: 16px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  box-shadow: $shadow1;
+
+  &__caption {
+    padding: 30px 0;
+  }
+  
+  &__title {
+    color: $color-dark-gray1;
+    font-weight: 500;
+  }
+  
+  &__description {
+    color: $color-gray1;
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,31 @@
+.hero-section {
+  color: $color-white1;
+  background-color: $color-dark-blue;
+  background-image: linear-gradient($bg-overlay, $bg-overlay),
+    url(../images/backgrounds/hero.jpg);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: 1600px 600px;
+
+  &__container {
+    padding: 106px 252px;
+  }
+
+  &__heading {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.2;
+    padding: 0 25px 15px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  &__button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 30px;
+    padding: 12px 40px;
+    box-shadow: 0px 4px $shadow-color1;
+  }
+}

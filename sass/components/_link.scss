@@ -1,0 +1,12 @@
+.link {
+  color: $color-gray1;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color $animation-time $animation-timing;
+
+  &:hover,
+  &:focus,
+  &--active {
+    color: $color-blue;
+  }
+}

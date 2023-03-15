@@ -1,0 +1,29 @@
+.social-media {
+  margin-top: 16px;
+  justify-content: center;
+  gap: 10px;
+
+  &__item {
+    background-color: $color-white1;
+    border-radius: 50%;
+    margin: 0;
+    transition: background-color $animation-time $animation-timing;
+
+    &:hover,
+    &:focus-within {
+      background-color: $color-blue;
+    }
+  }
+  
+  &__link {
+    color: $color-gray2;
+    fill: currentColor;
+
+    &:hover,
+    &:focus {
+      .social-media__icon {
+        color: $color-white1;
+      }
+    }
+  }
+}

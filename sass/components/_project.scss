@@ -1,0 +1,72 @@
+.project {
+  $card-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  $transform: translateY(-101%);
+
+  text-align: left;
+  border: 1px solid $border-color2;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+
+  &__link {
+    &:focus {
+      .project__card {
+        box-shadow: $card-shadow;
+      }
+
+      .card__overlay-description {
+        transform: $transform;
+      }
+    }
+  }
+
+  &__card {
+    box-shadow: none;
+    transition: box-shadow $animation-time $animation-timing;
+
+    &:hover {
+      box-shadow: $card-shadow;
+
+      .card__overlay-description {
+        transform: $transform;
+      }
+    }
+
+    .card__image {
+      position: relative;
+      width: 370px;
+      height: 294px;
+      overflow: hidden;
+    }
+
+    .card__overlay-description {
+      color: $color-white1;
+      background-color: $bg-overlay4;
+      position: absolute;
+      top: 101%;
+      left: 0;
+      height: 100%;
+      padding: 49px 45px 0 24px;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 1.56;
+      transition: transform $animation-time $animation-timing;
+    }
+
+    .card__caption {
+      padding: 20px 24px;
+    }
+
+    .card__title {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 2;
+    }
+
+    .card__description {
+      line-height: 1.8;
+      margin-top: 4px;
+      font-weight: 400;
+    }
+  }
+}

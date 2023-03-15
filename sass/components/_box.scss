@@ -1,0 +1,8 @@
+.box {
+    display: flex;
+    align-items: center;
+
+    &__item {
+        list-style-type: none;
+    }
+}

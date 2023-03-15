@@ -1,0 +1,22 @@
+.client-logos {
+  &__link {
+    color: $color-gray2;
+
+    .client-logos__logo {
+      fill: currentColor;
+      border: 1px solid currentColor;
+      border-radius: 4px;
+      padding: 14px 32px;
+      transition: border $animation-time $animation-timing;
+    }
+  
+    &:hover,
+    &:focus {
+      color: $color-blue;
+  
+      .client-logos__logo {
+        border: 1px solid $color-blue;
+      }
+    }
+  }
+}

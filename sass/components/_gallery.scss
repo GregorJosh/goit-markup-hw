@@ -1,0 +1,15 @@
+.gallery {
+  &__item {
+    position: relative;
+  }
+  
+  &__description {
+    color: $color-white1;
+    background-color: $bg-overlay3;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 27px 0;
+    font-size: 14px;
+  }
+}
