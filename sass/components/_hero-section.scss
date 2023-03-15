@@ -1,7 +1,8 @@
 .hero-section {
   color: $color-white1;
   background-color: $color-dark-blue;
-  background-image: linear-gradient($bg-overlay, $bg-overlay), url(../images/backgrounds/hero.jpg);
+  background-image: linear-gradient($bg-overlay, $bg-overlay),
+    url(../images/backgrounds/hero.jpg);
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: 1600px 600px;
@@ -31,19 +32,32 @@
 
 @media (max-width: 480px) {
   .hero-section {
+    background-image: linear-gradient($bg-overlay, $bg-overlay),
+      url(../../images/backgrounds/hero-480x400x1.jpg);
     background-size: cover;
 
     &__container {
-      padding: 118px 57px;
+      padding: 58px 25px;
     }
 
     &__heading {
       font-size: 26px;
+      line-height: 1.62;
+      padding: 0;
     }
 
     &__button {
       background-color: $color-blue;
       color: $color-white1;
     }
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: linear-gradient($bg-overlay, $bg-overlay),
+      url(../../images/backgrounds/hero-480x400x2.jpg);
   }
 }

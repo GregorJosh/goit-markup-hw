@@ -20,6 +20,12 @@
 
 @media (max-width: 480px) {
   .section {
+    padding: 60px 0;
+
+    &__heading {
+      margin-bottom: 30px;
+    }
+
     &__card {
       width: 100%;
     }
