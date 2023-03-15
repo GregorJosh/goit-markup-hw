@@ -2,45 +2,12 @@
   display: inline-block;
 
   &,
-  &__menu,
-  &__item,
-  &__item--active {
+  &__menu {
     height: 100%;
   }
 
   &__menu {
     margin-left: 93px;
-    column-gap: 46px;
-  }
-
-  &__item,
-  &__item--active {
-    position: relative;
-    display: flex;
-    align-items: center;
-  }
-
-  &__item--active &__link {
-    color: $color-blue;
-  }
-
-  &__item--active &__link::after {
-    background-color: $color-blue;
-    display: block;
-    position: absolute;
-    bottom: -1px;
-    width: 100%;
-    height: 5px;
-    content: "";
-  }
-
-  &__link {
-    color: $color-dark-gray1;
-
-    &:hover,
-    &:focus {
-      color: $color-blue;
-    }
   }
 }
 

@@ -27,17 +27,15 @@
           <span class="page-header__logo-accent logo__accent">Web</span>Studio
         </a>
         <nav class="navigation">
-          <ul class="navigation__menu box">
-            <li class="navigation__item--active box__item">
-              <a class="navigation__link link" href="index.html">Agencja</a>
+          <ul class="navigation__menu menu box">
+            <li class="menu__item--active box__item">
+              <a class="menu__link link" href="index.html">Agencja</a>
             </li>
-            <li class="navigation__item box__item">
-              <a class="navigation__link link" href="portfolio.html"
-                >Portfolio</a
-              >
+            <li class="menu__item box__item">
+              <a class="menu__link link" href="portfolio.html">Portfolio</a>
             </li>
-            <li class="navigation__item box__item">
-              <a class="navigation__link link" href="#">Kontakt</a>
+            <li class="menu__item box__item">
+              <a class="menu__link link" href="#">Kontakt</a>
             </li>
           </ul>
         </nav>
@@ -60,7 +58,7 @@
           </li>
         </ul>
         <button
-          class="page-header__menu-toggle-button menu-toggle-button button"
+          class="page-header__menu-toggle-button menu-toggle-button button js-open-menu"
           type="button"
         >
           <svg
@@ -77,6 +75,36 @@
             />
           </svg>
         </button>
+      </div>
+      <div class="mobile-menu-container" id="mobile-menu-container">
+        <button
+          class="mobile-menu-container__toggle-button toggle-button js-close-menu"
+        >
+          <svg
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+
+        <ul class="mobile-menu-container__menu menu box">
+          <li class="menu__item--active box__item">
+            <a class="menu__link link" href="index.html">Agencja</a>
+          </li>
+          <li class="menu__item box__item">
+            <a class="menu__link link" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="menu__item box__item">
+            <a class="menu__link link" href="#">Kontakt</a>
+          </li>
+        </ul>
       </div>
     </header>
     <main>

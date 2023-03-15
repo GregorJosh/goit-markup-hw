@@ -8,8 +8,14 @@
     vertical-align: middle;
 
     &:hover {
-      color: $color-white1;
+      color: $color-blue;
+      background-color: $color-white1;
     }
+  }
+
+  &:hover {
+    background-color: $color-white1;
+    box-shadow: none;
   }
 }
 
