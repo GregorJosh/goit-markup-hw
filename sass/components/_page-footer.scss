@@ -96,3 +96,16 @@
     }
   }
 }
+
+@media (max-width: 480px) {
+  .page-footer {
+    &__container {
+      max-height: none;
+    }
+
+    &__newsletter-form {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

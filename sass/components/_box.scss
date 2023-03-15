@@ -1,8 +1,14 @@
 .box {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 
-    &__item {
-        list-style-type: none;
-    }
+  &__item {
+    list-style-type: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .box {
+    flex-wrap: wrap;
+  }
 }
