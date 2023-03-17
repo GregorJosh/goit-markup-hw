@@ -3,16 +3,12 @@
   background-color: $color-dark-blue;
 
   &__container {
-    display: flex;
-    align-items: center;
     padding-top: 60px;
     padding-bottom: 60px;
+    display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
     align-content: space-between;
-    column-gap: 75px;
-    flex-wrap: wrap;
-    max-height: 252px;
   }
   
   &__logo,
@@ -97,15 +93,21 @@
   }
 }
 
-@media (max-width: 480px) {
-  .page-footer {
-    &__container {
-      max-height: none;
-    }
+@media screen and (min-width: 480px) {
+ 
+}
 
-    &__newsletter-form {
-      display: flex;
-      flex-direction: column;
-    }
-  }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  
+}
+
+@media screen and (min-width: 1200px) {
+ .page-footer {
+   &__container {
+     max-height: 252px;
+     flex-wrap: wrap;
+     align-items: start;
+     column-gap: 75px;
+   }
+ }
 }
