@@ -51,10 +51,11 @@
   
   &__newsletter-form {
     display: flex;
+    flex-direction: column;
     column-gap: 10px;
 
     .newsletter-form__email-input {
-      width: 358px;
+      width: 100%;
       background-color: transparent;
       border: 1px solid $bg-overlay7;
       border-radius: 4px;
@@ -109,5 +110,13 @@
      align-items: start;
      column-gap: 75px;
    }
- }
+
+   &__newsletter-form {
+    flex-direction: row;
+
+    .newsletter-form__email-input {
+      width: 358px;
+    }
+   } 
+  }
 }
