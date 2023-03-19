@@ -1,21 +1,35 @@
 .modal-window {
-  background-color: $color-white1;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 528px;
-  height: 581px;
   text-align: right;
+  background-color: $color-white1;
   border: 1px solid $bg-overlay6;
   border-radius: 4px;
   box-shadow: $shadow1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
   transform: translate(-50%, -50%);
 
   &__close-button {
     background-color: $color-white1;
-    margin: 8px 8px 0;
-    padding: 5px 8px;
     border: 1px solid $bg-overlay6;
     border-radius: 50%;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    padding: 5px 8px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-window {
+    width: 528px;
+    height: 581px;
   }
 }

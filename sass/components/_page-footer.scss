@@ -3,42 +3,35 @@
   background-color: $color-dark-blue;
 
   &__container {
-    padding-top: 60px;
-    padding-bottom: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
     align-content: space-between;
   }
-  
+
   &__logo,
   &__logo:hover,
   &__logo:focus {
     color: $color-white1;
   }
-  
+
   &__address {
+    text-align: center;
     font-style: normal;
     line-height: 1.71;
     font-weight: 400;
-    margin-top: 20px;
+    margin-top: 30px;
   }
-  
-  &__link {
-    padding-top: 9px;
-  }
-  
+
   &__heading {
-    margin: 10px 0;
     font-size: 14px;
-  }
-  
-  &__social-media,
-  &__newsletter-form {
-    margin: 20px 0;
+    margin-top: 60px;
+    margin-bottom: 20px;
   }
 
   &__social-media {
+    margin: 0;
+
     .social-media__item {
       background-color: $bg-overlay2;
 
@@ -48,11 +41,12 @@
       }
     }
   }
-  
+
   &__newsletter-form {
     display: flex;
     flex-direction: column;
-    column-gap: 10px;
+    align-items: center;
+    row-gap: 20px;
 
     .newsletter-form__email-input {
       width: 100%;
@@ -65,58 +59,75 @@
       margin: 0;
       padding: 15px 16px;
     }
-  
+
     .newsletter-form__email-input,
     .newsletter-form__email-input::placeholder {
       color: $bg-overlay8;
     }
-  
+
     .newsletter-form__submit-button {
-      position: relative;
-      width: 200px;
-      padding: 10px 28px 10px 0;
+      color: $color-white1;
+      background-color: $color-blue;
+      box-shadow: $btn-shadow1;
       font-size: 16px;
       font-weight: 700;
       line-height: 1.88;
-      background-color: $color-blue;
-      color: $color-white1;
-      box-shadow: $btn-shadow1;
+      position: relative;
+      width: 200px;
+      padding: 10px 28px 10px 0;
     }
-  
+
     .newsletter-form__send-icon {
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
       margin-left: 24px;
-  
+
       fill: $color-white1;
     }
   }
 }
 
 @media screen and (min-width: 480px) {
- 
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  
 }
 
 @media screen and (min-width: 1200px) {
- .page-footer {
-   &__container {
-     max-height: 252px;
-     flex-wrap: wrap;
-     align-items: start;
-     column-gap: 75px;
-   }
-
-   &__newsletter-form {
-    flex-direction: row;
-
-    .newsletter-form__email-input {
-      width: 358px;
+  .page-footer {
+    &__container {
+      padding-top: 60px;
+      padding-bottom: 60px;
+      max-height: 252px;
+      flex-wrap: wrap;
+      align-items: start;
+      column-gap: 75px;
     }
-   } 
+
+    &__address {
+      margin-top: 20px;
+    }
+
+    &__link {
+      padding-top: 9px;
+    }
+
+    &__heading {
+      margin: 10px 0;
+    }
+
+    &__social-media,
+    &__newsletter-form {
+      margin: 20px 0;
+    }
+
+    &__newsletter-form {
+      flex-direction: row;
+
+      .newsletter-form__email-input {
+        width: 358px;
+      }
+    }
   }
 }
