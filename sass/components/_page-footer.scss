@@ -160,6 +160,7 @@
 
     &__newsletter-form {
       flex-direction: row;
+      column-gap: 12px;
 
       .newsletter-form__email-input {
         width: 358px;
