@@ -20,7 +20,7 @@
   closeMenuBtn.addEventListener("click", toggleMenu);
 
   // Close the mobile menu on wider screens if the device orientation changes
-  window.matchMedia("(min-width: 481px)").addEventListener("change", (e) => {
+  window.matchMedia("(min-width: 768px)").addEventListener("change", (e) => {
     if (!e.matches) return;
 
     mobileMenu.classList.remove("mobile-menu-container--is-open");

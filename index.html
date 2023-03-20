@@ -372,10 +372,13 @@
                 <img
                   src="./images/team/card1.jpg"
                   srcset="
-                    ./images/team/card1-450.jpg, 
-                    ./images/team/card1-450x2.jpg
+                    ./images/team/card1.jpg       270w,
+                    ./images/team/card1-354.jpg   354w,
+                    ./images/team/card1-450.jpg   450w,
+                    ./images/team/card1-354x2.jpg 708w,
+                    ./images/team/card1-450x2.jpg 900w
                   "
-                  sizes="(min-width: 480px) 450px, 320px"
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 320px"
                   alt="John Doe photo"
                 />
                 <figcaption class="card__caption">
@@ -419,10 +422,13 @@
                 <img
                   src="./images/team/card2.jpg"
                   srcset="
-                    ./images/team/card2-450.jpg, 
-                    ./images/team/card2-450x2.jpg
+                    ./images/team/card2.jpg       270w,
+                    ./images/team/card2-354.jpg   354w,
+                    ./images/team/card2-450.jpg   450w,
+                    ./images/team/card2-354x2.jpg 708w,
+                    ./images/team/card2-450x2.jpg 900w
                   "
-                  sizes="(min-width: 480px) 450px, 320px"
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 320px"
                   alt="John Doe photo"
                 />
                 <figcaption class="card__caption">
@@ -466,10 +472,13 @@
                 <img
                   src="./images/team/card3.jpg"
                   srcset="
-                    ./images/team/card3-450.jpg, 
-                    ./images/team/card3-450x2.jpg
+                    ./images/team/card3.jpg       270w,
+                    ./images/team/card3-354.jpg   354w,
+                    ./images/team/card3-450.jpg   450w,
+                    ./images/team/card3-354x2.jpg 708w,
+                    ./images/team/card3-450x2.jpg 900w
                   "
-                  sizes="(min-width: 480px) 450px, 320px"
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 320px"
                   alt="John Doe photo"
                 />
                 <figcaption class="card__caption">
@@ -513,10 +522,13 @@
                 <img
                   src="./images/team/card4.jpg"
                   srcset="
-                    ./images/team/card4-450.jpg, 
-                    ./images/team/card4-450x2.jpg
+                    ./images/team/card4.jpg       270w,
+                    ./images/team/card4-354.jpg   354w,
+                    ./images/team/card4-450.jpg   450w,
+                    ./images/team/card4-354x2.jpg 708w,
+                    ./images/team/card4-450x2.jpg 900w
                   "
-                  sizes="(min-width: 480px) 450px, 320px"
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 320px"
                   alt="John Doe photo"
                 />
                 <figcaption class="card__caption">
@@ -565,42 +577,42 @@
         <div class="container">
           <h2 class="section__heading">Nasi klienci</h2>
           <ul class="section__box box client-logos">
-            <li class="box__item">
+            <li class="client-logos__item box__item">
               <a class="client-logos__link link" href="#">
                 <svg class="client-logos__logo" width="170" height="92">
                   <use href="./images/icons.svg#logo-ya-co"></use>
                 </svg>
               </a>
             </li>
-            <li class="box__item">
+            <li class="client-logos__item box__item">
               <a class="client-logos__link link" href="#">
                 <svg class="client-logos__logo" width="170" height="92">
                   <use href="./images/icons.svg#logo-company1"></use>
                 </svg>
               </a>
             </li>
-            <li class="box__item">
+            <li class="client-logos__item box__item">
               <a class="client-logos__link link" href="#">
                 <svg class="client-logos__logo" width="170" height="92">
                   <use href="./images/icons.svg#logo-company2"></use>
                 </svg>
               </a>
             </li>
-            <li class="box__item">
+            <li class="client-logos__item box__item">
               <a class="client-logos__link link" href="#">
                 <svg class="client-logos__logo" width="170" height="92">
                   <use href="./images/icons.svg#logo-foster-peters"></use>
                 </svg>
               </a>
             </li>
-            <li class="box__item">
+            <li class="client-logos__item box__item">
               <a class="client-logos__link link" href="#">
                 <svg class="client-logos__logo" width="170" height="92">
                   <use href="./images/icons.svg#logo-brand"></use>
                 </svg>
               </a>
             </li>
-            <li class="box__item">
+            <li class="client-logos__item box__item">
               <a class="client-logos__link link" href="#">
                 <svg class="client-logos__logo" width="170" height="92">
                   <use href="./images/icons.svg#logo-company3"></use>
@@ -613,72 +625,78 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__container container">
-        <a class="page-footer__logo logo link" href="index.html">
-          <span class="logo__accent">Web</span>Studio
-        </a>
-        <address class="page-footer__address">
-          m. Warszawa, Aleje Jerozolimskie 21
-          <br />
-          <a class="page-footer__link link" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
+        <div class="page-footer__contact-data-wrapper wrapper">
+          <a class="page-footer__logo logo link" href="index.html">
+            <span class="logo__accent">Web</span>Studio
+          </a>
+          <address class="page-footer__address">
+            m. Warszawa, Aleje Jerozolimskie 21
+            <br />
+            <a class="page-footer__link link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+            <br />
+            <a class="page-footer__link link" href="tel:+48111111111"
+              >+48 111 111 111</a
+            >
+          </address>
+        </div>
+        <div class="page-footer__social-media-wrapper wrapper">
+          <h3 class="page-footer__heading">DOŁĄCZ DO NAS</h3>
+          <ul class="page-footer__social-media social-media box">
+            <li class="social-media__item box__item">
+              <a class="social-media__link link" href="#">
+                <svg class="social-media__icon" width="44" height="44">
+                  <use href="./images/icons.svg#icon-instagram2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-media__item box__item">
+              <a class="social-media__link link" href="#">
+                <svg class="social-media__icon" width="44" height="44">
+                  <use href="./images/icons.svg#icon-twitter2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-media__item box__item">
+              <a class="social-media__link link" href="#">
+                <svg class="social-media__icon" width="44" height="44">
+                  <use href="./images/icons.svg#icon-facebook2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-media__item box__item">
+              <a class="social-media__link link" href="#">
+                <svg class="social-media__icon" width="44" height="44">
+                  <use href="./images/icons.svg#icon-linked-in2"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__newsletter-form-wrapper wrapper">
+          <h3 class="page-footer__heading">ZAPISZ SIĘ DO NEWSLETTERA</h3>
+          <form
+            class="page-footer__newsletter-form newsletter-form"
+            name="newsletter-form"
+            autocomplete="on"
+            action="javascript:void;"
           >
-          <br />
-          <a class="page-footer__link link" href="tel:+48111111111"
-            >+48 111 111 111</a
-          >
-        </address>
-        <h3 class="page-footer__heading">DOŁĄCZ DO NAS</h3>
-        <ul class="page-footer__social-media social-media box">
-          <li class="social-media__item box__item">
-            <a class="social-media__link link" href="#">
-              <svg class="social-media__icon" width="44" height="44">
-                <use href="./images/icons.svg#icon-instagram2"></use>
+            <input
+              class="newsletter-form__email-input text-input input"
+              id="e-mail-address"
+              type="email"
+              name="e-mail-address"
+              placeholder="E-mail"
+            />
+            <button class="newsletter-form__submit-button button" type="submit">
+              Zapisz się
+              <svg class="newsletter-form__send-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
               </svg>
-            </a>
-          </li>
-          <li class="social-media__item box__item">
-            <a class="social-media__link link" href="#">
-              <svg class="social-media__icon" width="44" height="44">
-                <use href="./images/icons.svg#icon-twitter2"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-media__item box__item">
-            <a class="social-media__link link" href="#">
-              <svg class="social-media__icon" width="44" height="44">
-                <use href="./images/icons.svg#icon-facebook2"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-media__item box__item">
-            <a class="social-media__link link" href="#">
-              <svg class="social-media__icon" width="44" height="44">
-                <use href="./images/icons.svg#icon-linked-in2"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-        <h3 class="page-footer__heading">ZAPISZ SIĘ DO NEWSLETTERA</h3>
-        <form
-          class="page-footer__newsletter-form newsletter-form"
-          name="newsletter-form"
-          autocomplete="on"
-          action="javascript:void;"
-        >
-          <input
-            class="newsletter-form__email-input text-input input"
-            id="e-mail-address"
-            type="email"
-            name="e-mail-address"
-            placeholder="E-mail"
-          />
-          <button class="newsletter-form__submit-button button" type="submit">
-            Zapisz się
-            <svg class="newsletter-form__send-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-send"></use>
-            </svg>
-          </button>
-        </form>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 

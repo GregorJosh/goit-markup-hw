@@ -36,14 +36,9 @@
     width: 100%;
   }
 
-  &__label:has(.form-field__checkbox) {
-    text-align: center;
-    font-size: 14px;
-  }
-
   &__form-field:has(.form-field__checkbox) {
     display: inline;
-    margin-right: 8px;
+    margin-right: 7px;
   }
 
   &__submit-button {
@@ -55,6 +50,11 @@
     font-weight: 700;
     line-height: 1.88;
     box-shadow: $btn-shadow1;
+
+    &:hover,
+    &:focus {
+      background-color: rgba(24, 140, 232, 1);
+    }
   }
 }
 
@@ -67,13 +67,13 @@
 
 @media screen and (min-width: 1200px) {
   .application {
-    padding: 0;
-
     &__form {
-      margin: 12px 40px;
+      margin: 12px 0;
     }
 
     &__label:has(.form-field__checkbox) {
+      text-align: center;
+      font-size: 14px;
       margin-top: 10px;
     }
   }

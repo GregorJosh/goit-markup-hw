@@ -2,31 +2,42 @@
   &__link {
     color: $color-gray2;
 
-    .client-logos__logo {
-      fill: currentColor;
-      border: 1px solid currentColor;
-      border-radius: 4px;
-      padding: 14px 32px;
-      transition: border $animation-time $animation-timing;
-    }
-  
     &:hover,
     &:focus {
       color: $color-blue;
-  
+
       .client-logos__logo {
         border: 1px solid $color-blue;
       }
     }
   }
+
+  &__logo {
+    fill: currentColor;
+    border: 1px solid currentColor;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    padding: 14px 32px;
+    transition: border $animation-time $animation-timing;
+  }
 }
 
 @media screen and (min-width: 480px) {
+  .client-logos {
+    &__item {
+      flex-basis: calc((100% - 30px) / 2);
+    }
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .client-logos {
+    &__item {
+      flex-basis: calc((100% - 60px) / 3);
+    }
+  }
 }
 
 @media screen and (min-width: 1200px) {
-  
 }

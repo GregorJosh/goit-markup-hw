@@ -14,12 +14,31 @@
   }
 }
 
-@media screen and (min-width: 480px) {
-  
+@media screen and (min-width: 768px) {
+  .page-header {
+    &__links {
+      display: flex;
+    }
+
+    &__icon {
+      fill: currentColor;
+      margin: 0 8px 3px 0;
+      vertical-align: middle;
+    }
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-   
+  .page-header {
+    &__container {
+      height: 90px;
+    }
+
+    &__links {
+      flex-direction: column;
+      row-gap: 10px;
+    }
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -29,14 +48,7 @@
       justify-content: start;
     }
 
-    &__icon {
-      fill: currentColor;
-      margin: 0 8px 3px 0;
-      vertical-align: middle;
-    }
-  
     &__links {
-      display: flex;
       margin-left: auto;
       column-gap: 30px;
     }

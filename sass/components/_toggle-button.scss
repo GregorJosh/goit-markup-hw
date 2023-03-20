@@ -1,6 +1,5 @@
 .toggle-button {
   background-color: $color-white1;
-  display: none;
   padding: 12px 8px;
   
   &__icon {
@@ -19,8 +18,14 @@
   }
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .toggle-button {
     display: inline;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .toggle-button {
+    display: none;
   }
 }

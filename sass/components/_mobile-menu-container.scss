@@ -24,6 +24,11 @@
     .toggle-button__icon {
       color: $color-dark-gray1;
       fill: currentColor;
+
+      &:hover, 
+      &:focus {
+        color: $color-blue;
+      }
     }
   }
 
