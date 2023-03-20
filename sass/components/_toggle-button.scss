@@ -5,14 +5,10 @@
   &__icon {
     fill: currentColor;
     vertical-align: middle;
-
-    &:hover {
-      color: $color-blue;
-      background-color: $color-white1;
-    }
   }
 
   &:hover {
+    color: $color-blue;
     background-color: $color-white1;
     box-shadow: none;
   }

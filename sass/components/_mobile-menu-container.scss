@@ -78,8 +78,16 @@
         font-size: 18px;
         line-height: 1.22;
 
+        &:hover {
+          background-color: $color-white1;
+        }
+
         .social-media__link {
             color: $color-blue;
+
+            &:hover {
+              background-color: $color-white1;
+            }
         }
     }
 
