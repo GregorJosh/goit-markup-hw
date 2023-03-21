@@ -6,6 +6,7 @@
     display: flex;
     flex-direction: column;
     align-items: stretch;
+    padding: 60px 0;
   }
 
   &__logo,
@@ -46,20 +47,19 @@
   }
 
   &__newsletter-form {
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     row-gap: 20px;
 
     .newsletter-form__email-input {
-      width: 100%;
       background-color: transparent;
       border: 1px solid $bg-overlay7;
       border-radius: 4px;
       box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
       font-size: 16px;
       line-height: 1.25;
+      width: 290px;
       margin: 0;
       padding: 15px 16px;
     }
@@ -97,6 +97,16 @@
     &__container {
       .wrapper {
         text-align: center;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .page-footer {
+    &__newsletter-form {
+      .newsletter-form__email-input {
+        width: 100%;
       }
     }
   }
@@ -164,6 +174,10 @@
 
       .newsletter-form__email-input {
         width: 358px;
+      }
+
+      .newsletter-form__submit-button {
+        width: 200px;
       }
     }
   }

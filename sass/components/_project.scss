@@ -69,22 +69,16 @@
   }
 }
 
-@media screen and (min-width: 480px) {
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .project {
-    &__card {
-      width: 353px;
-      .card__image {
-        height: 294px;
-      }
-    }
+    flex-basis: calc((100% - 30px) / 2);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .project {
+    width: 370px;
+
     &__card {
       .card__image {
         width: 370px;
